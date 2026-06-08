@@ -1,0 +1,27 @@
+/*
+  =========================================
+  Theme Stylesheet (Light/Dark Mode Adjustments)
+  =========================================
+*/
+
+/* Transition configurations for theme switching */
+body,
+header,
+footer,
+.card,
+.project-card,
+input,
+textarea,
+button,
+a,
+#theme-toggle {
+  transition: background-color var(--transition-speed),
+              color var(--transition-speed),
+              border-color var(--transition-speed),
+              box-shadow var(--transition-speed);
+}
+
+/* Image comfort styling in dark mode (reduces eye strain/glare) */
+body.dark-mode img {
+  filter: brightness(0.85) contrast(1.05);
+}

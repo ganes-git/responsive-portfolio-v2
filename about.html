@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - HTML5 Semantic & Accessible Portfolio</title>
+  <meta name="description" content="Learn more about my professional journey, web development experience, and accessibility background.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script src="theme.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip Link for Keyboard Users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Developer Portfolio</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="container">
+    <div class="about-layout">
+      <!-- Main Content on Left -->
+      <div class="about-main">
+        <section aria-labelledby="about-heading">
+          <h2 id="about-heading">My Background</h2>
+          <p>
+            I am a frontend developer who believes that building clean, standardized code is the foundation of a high-quality web. I specialize in writing robust HTML and CSS that is accessible for keyboard navigators, screen readers, and screen magnification users.
+          </p>
+          <p>
+            My philosophy is simple: write semantic markups first. By using elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code>, we build structures that assist accessibility technologies and improve SEO search indexes.
+          </p>
+        </section>
+
+        <!-- Experience Section using <time> -->
+        <section aria-labelledby="experience-title">
+          <h2 id="experience-title">Professional Timeline</h2>
+          <ol>
+            <li>
+              <h3>Senior Accessibility Specialist</h3>
+              <p><time datetime="2025">2025</time> - Present: Spearheading semantic markup upgrades and training for development teams.</p>
+            </li>
+            <li>
+              <h3>Junior Frontend Developer</h3>
+              <p><time datetime="2023">2023</time> - <time datetime="2025">2025</time>: Built responsive templates and audited user interfaces for WCAG 2.1 compliance.</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Contact details using <address> -->
+        <section aria-labelledby="contact-info-title">
+          <h2 id="contact-info-title">Office Location</h2>
+          <address>
+            <strong>Ganesh</strong><br>
+            Web Accessibility HQ<br>
+            100 Accessibility Way<br>
+            San Francisco, CA 94103<br>
+            Email: <a href="mailto:ganesh@example.com">ganesh@example.com</a>
+          </address>
+        </section>
+      </div>
+
+      <!-- Skills Sidebar on Right -->
+      <aside aria-labelledby="skills-heading">
+        <section class="card">
+          <h3 id="skills-heading">Skills & Expertise</h3>
+          <ul>
+            <li>Semantic HTML5</li>
+            <li>CSS3 Grid & Flexbox</li>
+            <li>WCAG 2.2 Compliance</li>
+            <li>WAI-ARIA Best Practices</li>
+            <li>SEO Auditing & Optimization</li>
+            <li>Vanilla JavaScript</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-copyright">
+        <p>&copy; <time id="copyright-year">2026</time> Ganesh. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <h4>Find Me On</h4>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

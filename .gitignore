@@ -1,0 +1,10 @@
+.env
+.env.*
+*.env
+secrets.js
+config.js
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/

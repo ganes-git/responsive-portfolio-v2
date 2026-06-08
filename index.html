@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - HTML5 Semantic & Accessible Portfolio</title>
+  <meta name="description" content="Welcome to my accessible developer portfolio. Built using semantic HTML5 and CSS for optimal keyboard navigation and screen reader support.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script src="theme.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip Link for Keyboard Users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Developer Portfolio</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to My Space</h2>
+        <p>
+          Hi there! I am a passionate web developer focused on creating clean, semantic, and highly accessible websites.
+          This project demonstrates my commitment to building digital experiences that everyone can use and enjoy, including users with visual, auditory, motor, or cognitive disabilities.
+        </p>
+        <p>
+          Please navigate through this site using either your mouse or your keyboard (via the Tab key) to explore my about page, see my projects, or get in touch.
+        </p>
+        <a href="projects.html" class="btn">View My Work</a>
+      </div>
+      <div class="hero-image">
+        <img src="avatar.png" alt="Ganesh's profile avatar showing a modern, friendly web developer.">
+      </div>
+    </section>
+
+    <!-- Semantic Sidebar -->
+    <aside aria-labelledby="sidebar-title">
+      <section class="card">
+        <h3 id="sidebar-title">Fast Facts</h3>
+        <ul>
+          <li><strong>Specialty:</strong> Semantic HTML5 & Web Accessibility (WCAG 2.2)</li>
+          <li><strong>Goal:</strong> Perfect 100/100 Lighthouse scores</li>
+          <li><strong>Theme:</strong> Plain Vanilla CSS3 and clean design aesthetics</li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-copyright">
+        <p>&copy; <time id="copyright-year">2026</time> Ganesh. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <h4>Find Me On</h4>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

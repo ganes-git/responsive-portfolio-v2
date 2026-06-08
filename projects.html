@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - HTML5 Semantic & Accessible Portfolio</title>
+  <meta name="description" content="Explore my projects featuring accessible design, semantic HTML structure, and keyboard-friendly widgets.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script src="theme.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip Link for Keyboard Users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Developer Portfolio</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="container">
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected Projects</h2>
+      <p>Here are some examples of projects built using semantic HTML5, clean styling, and strict WCAG accessibility principles.</p>
+      
+      <!-- Responsive Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project Card 1 -->
+        <article class="card">
+          <h3>Accessible E-Commerce</h3>
+          <p>An e-commerce landing page featuring accessible filters, screen-reader announced notifications, and keyboard trap-free modal dialogs.</p>
+          <figure>
+            <img src="https://placehold.co/400x300" alt="Wireframe preview of an e-commerce website showing accessible filters and product grids.">
+            <figcaption>Preview: Accessible E-Commerce Platform Layout</figcaption>
+          </figure>
+          <a href="#" class="btn-link">View Project Details</a>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="card">
+          <h3>Semantic Blog Platform</h3>
+          <p>A simple blogging platform engineered around standard HTML heading structures, article cards, and skip navigation shortcuts.</p>
+          <figure>
+            <img src="https://placehold.co/400x300" alt="Wireframe of a clean blog layout with main articles and sidebar elements.">
+            <figcaption>Preview: Semantic Blog Structure</figcaption>
+          </figure>
+          <a href="#" class="btn-link">View Project Details</a>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="card">
+          <h3>Keyboard-Navigable Dashboard</h3>
+          <p>A data-heavy dashboard with focus-trapped modal forms, aria-live updates, and fully accessible charts utilizing canvas and fallback text tables.</p>
+          <figure>
+            <img src="https://placehold.co/400x300" alt="Mockup of a dashboard showing keyboard flow paths across cards and data charts.">
+            <figcaption>Preview: Accessible Dashboard Design</figcaption>
+          </figure>
+          <a href="#" class="btn-link">View Project Details</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-copyright">
+        <p>&copy; <time id="copyright-year">2026</time> Ganesh. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <h4>Find Me On</h4>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

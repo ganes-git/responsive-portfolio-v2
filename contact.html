@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - HTML5 Semantic & Accessible Portfolio</title>
+  <meta name="description" content="Get in touch with me through this fully accessible, keyboard-operable contact form.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script src="theme.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip Link for Keyboard Users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Developer Portfolio</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="container">
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>Please use the form below to send a message. All fields are required and are designed to be fully navigable by keyboard and screen readers.</p>
+      
+      <!-- Accessible Form Container -->
+      <form id="contact-form" action="#" method="post" aria-label="Contact form" class="card">
+        
+        <!-- Full Name Group -->
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="name" required autocomplete="name">
+        </div>
+
+        <!-- Email Group -->
+        <div class="form-group">
+          <label for="email-address">Email</label>
+          <input type="email" id="email-address" name="email" required autocomplete="email">
+        </div>
+
+        <!-- Subject Group -->
+        <div class="form-group">
+          <label for="subject-line">Subject</label>
+          <input type="text" id="subject-line" name="subject" required>
+        </div>
+
+        <!-- Message Group -->
+        <div class="form-group">
+          <label for="message-body">Message</label>
+          <textarea id="message-body" name="message" rows="5" required></textarea>
+        </div>
+
+        <!-- Form Status Message Holder (Aria-live region for screen reader feedback) -->
+        <div id="form-status" aria-live="polite" style="margin-top: 1rem; font-weight: bold; min-height: 24px;"></div>
+
+        <!-- Submit Button -->
+        <div class="form-group" style="margin-top: 1rem; margin-bottom: 0;">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-copyright">
+        <p>&copy; <time id="copyright-year">2026</time> Ganesh. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <h4>Find Me On</h4>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

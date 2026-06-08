@@ -1,0 +1,56 @@
+/*
+  =========================================
+  CSS custom properties (Design Tokens)
+  =========================================
+*/
+:root {
+  /* Colors — Light Mode (default) */
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f5;
+  --color-text-primary: #111111;
+  --color-text-secondary: #555555;
+  --color-accent: #0057ff;
+  --color-accent-hover: #003ecc;
+  --color-border: #dddddd;
+  --color-nav-bg: #ffffff;
+  --color-footer-bg: #111111;
+  --color-footer-text: #ffffff;
+  --color-focus-ring: #0057ff;
+
+  /* Typography */
+  --font-heading: Georgia, serif;
+  --font-body: 'Courier New', monospace;
+  --font-size-base: 16px;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 1.8rem;
+  --font-size-h3: 1.3rem;
+  --line-height-body: 1.7;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Layout */
+  --max-width: 1100px;
+  --nav-height: 64px;
+  --border-radius: 8px;
+
+  /* Transitions */
+  --transition-speed: 0.3s;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+  --color-bg: #0f0f0f;
+  --color-surface: #1a1a1a;
+  --color-text-primary: #f0f0f0;
+  --color-text-secondary: #aaaaaa;
+  --color-accent: #4d8bff;
+  --color-accent-hover: #80aaff;
+  --color-border: #333333;
+  --color-nav-bg: #111111;
+  --color-focus-ring: #4d8bff;
+}

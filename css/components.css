@@ -1,0 +1,182 @@
+/*
+  =========================================
+  Components Stylesheet
+  =========================================
+*/
+
+/* Buttons */
+.btn,
+button[type="submit"] {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  font-family: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+  min-height: 44px; /* Mobile touch target */
+  line-height: 1.5;
+}
+
+.btn:hover,
+button[type="submit"]:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.btn:active,
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* Cards */
+.card,
+.project-card,
+aside section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  transition: box-shadow var(--transition-speed), border-color var(--transition-speed), background-color var(--transition-speed);
+}
+
+.card:hover,
+.project-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Navigation Links States */
+nav a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+nav a[aria-current="page"],
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-accent);
+  color: var(--color-text-primary);
+}
+
+/* Form Elements Focus & Interactive States */
+input:focus,
+textarea:focus,
+button:focus,
+a:focus {
+  outline: none;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+/* Form Styles */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-accent);
+}
+
+/* Theme Toggle Button Specific Styling */
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-speed), border-color var(--transition-speed);
+}
+
+#theme-toggle:hover {
+  background-color: var(--color-surface);
+  border-color: var(--color-accent);
+}
+
+/* Timeline Components on About page */
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ol li {
+  position: relative;
+  padding-left: var(--space-lg);
+  border-left: 2px solid var(--color-border);
+  margin-bottom: var(--space-lg);
+}
+
+ol li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+ol li h3 {
+  font-size: var(--font-size-h3);
+  margin-bottom: var(--space-xs);
+}
+
+ol li time {
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+/* Project images / captions */
+.project-card figure {
+  margin: var(--space-md) 0;
+}
+
+.project-card img {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  transition: transform var(--transition-speed);
+}
+
+.project-card:hover img {
+  transform: scale(1.02);
+}
+
+.project-card figcaption {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-top: var(--space-xs);
+  font-style: italic;
+}
+
+.btn-link {
+  display: inline-block;
+  color: var(--color-accent);
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: var(--space-md);
+  transition: color var(--transition-speed);
+}
+
+.btn-link:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
