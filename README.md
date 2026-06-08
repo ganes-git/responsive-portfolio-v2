@@ -31,7 +31,7 @@ responsive-portfolio-v2/
 ```
 
 ## 🚀 Live Demo
-🔗 **Live Site:** *(Will be updated after GitHub Pages deployment)*
+🔗 **Live Site:** [https://ganes-git.github.io/responsive-portfolio-v2/](https://ganes-git.github.io/responsive-portfolio-v2/)
 
 ## 🛠️ How to Run Locally
 To review this portfolio locally on your machine, you can run a simple local web server:
