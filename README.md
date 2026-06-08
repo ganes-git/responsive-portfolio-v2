@@ -1,7 +1,11 @@
 # responsive-portfolio-v2
 
+> [!NOTE]
+> This repository is hosted as part of a task/project given during a web development internship.
+
 ## 🔍 Project Overview
-An advanced, highly accessible, and responsive personal developer portfolio website. This project is a task given during a web development internship. It showcases structured, semantic HTML5 markup coupled with modern CSS3 Grid and Flexbox layout systems, a mobile-first responsive architecture, and a dynamic Light/Dark mode theme switcher.
+An advanced, highly accessible, and responsive personal developer portfolio website. It showcases structured, semantic HTML5 markup coupled with modern CSS3 Grid and Flexbox layout systems, a mobile-first responsive architecture, and a dynamic Light/Dark mode theme switcher.
+
 
 
 ## 🎯 Learning Objectives
